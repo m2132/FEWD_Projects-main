@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    position: static;
+    width: 80vw;
+    margin: 20vh 0 0 0;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="../images/icon.svg">
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/play-list.css">
+    <link rel="stylesheet" href="../css/small-all.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="../css/small-play-list.css" media="(max-width: 600px)">
+
+
+    <script src="https://kit.fontawesome.com/74fb6588e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./log-in.html">Log in</a>
+            <a href="./sign-up.html">Sign up</a>
+            <a href="#">Play list<div id="subline"></div></a>
+            <a href="./home.html#about">About</a>
+        </nav>
+    </header>
+    
+    <main>
+        <i class='fas fa-filter' style='font-size:24px' id="icon-filter"></i>
+        <input type="checkbox" id="pro" checked>
+        <label for="pro"> pro</label>
+
+        <input type="checkbox" id="free">
+        <label for="free">free</label>
+
+        <input type="checkbox" id="stormy">
+        <label for="stormy">stormy</label>
+
+        <input type="checkbox" id="quiet">
+        <label for="quiet">quiet</label> 
+
+        <input type="checkbox" id="all">
+        <label for="all">all</label>
+
+        <div id="line-1"></div>
+        <div id="line-2"></div>
+        <div id="cards">
+ 
+            <!-- card #1 -->
+            <div class="card pro quiet" id="song-1">
+                <a href="iframes/song-1.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">My Dreams</p>
+                        <p class="author">Filippo Marketi</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star-half-alt'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+
+            <!-- card #2 -->
+            <div class="card stormy free" id="song-2">
+                <a href="iframes/song-2.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Trees</p>
+                        <p class="author">Nerdo Pasquizi</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+
+            <!-- card #3 -->
+            <div class="card free stormy" id="song-3">
+                <a href="iframes/song-3.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Piano</p>
+                        <p class="author">Antonio Chesi</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+
+
+            <!-- card #4 -->
+            <div class="card pro free" id="song-4">
+                <a href="iframes/song-4.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Electric Guitar</p>
+                        <p class="author">Heinrich Lichner</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star-half-alt'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+
+            <!-- card #5 -->
+            <div class="card quiet pro" id="song-5">
+                <a href="iframes/song-5.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Violin</p>
+                        <p class="author">Max Reger</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star-half-alt'></i>
+                    </div>
+                </div>       
+            </div>
+
+            <!-- card #6 -->
+            <div class="card free pro" id="song-6">
+                <a href="iframes/song-6.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Teers</p>
+                        <p class="author">Nicola lzwar</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star-half-alt'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+            <!-- card #7 -->
+            <div class="card free stormy" id="song-7">
+                <a href="iframes/song-7.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Sea Waves</p>
+                        <p class="author">Gabriel Prolific</p>
+                    </div>
+                    <div class="rank">
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+            <!-- card #8 -->
+            <div class="card pro stormy" id="song-8">
+                <a href="iframes/song-8.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Flights</p>
+                        <p class="author">Jeikob Noradi</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+            <!-- card #9 -->
+            <div class="card quiet free" id="song-9">
+                <a href="iframes/song-9.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Luna</p>
+                        <p class="author">Smul Bosaikov</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+
+            <!-- card #10 -->
+            <div class="card pro stormy" id="song-10">
+                <a href="iframes/song-10.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Huge</p>
+                        <p class="author">Dwaxi Egdein </p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+        
+            <!-- card #11 -->
+            <div class="card pro quiet" id="song-11">
+                <a href="iframes/song-11.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Tune</p>
+                        <p class="author">Vadilo Ruliso </p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star-half-alt'></i>
+                        <i class='far fa-star'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+        
+
+            <!-- card #12 -->
+            <div class="card free stormy" id="song-12">
+                <a href="iframes/song-12.html" target="status-iframe"><div class="song-bg"></div></a>
+                <div class=info>
+                    <div class="details">
+                        <p class="song-name">Melody</p>
+                        <p class="author">Trino knomili</p>
+                    </div>
+                    <div class="rank">
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star'></i>
+                        <i class='fas fa-star-half-alt'></i>
+                        <i class='far fa-star'></i>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </main>
+    <footer>
+        <iframe src="./iframes/no-song-now.html" frameborder="0" allow="autoplay" name="status-iframe"></iframe>
+    </footer>
+</body>
+</html>

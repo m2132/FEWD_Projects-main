@@ -1,0 +1,307 @@
+:root {
+    --main-color: #5a67d8;
+}
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.search-menu {
+    display: flex;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#app {
+    background-color: rgb(236, 236, 236);
+}
+
+#app > div {
+    display: grid;
+    grid-template-columns: 220px auto;
+    grid-template-rows: 70px auto;
+
+}
+
+#app aside.labels-menu {
+    background-color: #212936;
+    width: 100%;
+    height: 100vh;
+    grid-row: 1 /span 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#app input[type="checkbox"][id$="label"] {
+    display: none;
+}
+
+#app label[for$="label"] {
+    width: 80%;
+    padding: 10px 10%;
+    margin: 5px 0;
+}
+
+#app input[type="checkbox"]:checked + label {
+    color: rgb(255,255,255);
+    font-weight: 500;
+    background: rgb(17,24,39);
+}
+ 
+#app .label span {
+    margin-right: 10px;
+}
+
+#app .label {
+    display: flex;
+    justify-content: center;
+
+}  
+
+#app .sort-key {
+    margin-top: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    color: #d1d5db;
+}
+
+#app .sort-key input {
+    outline: none;
+    background: rgb(17,24,39);
+    height: 40px;
+    padding: 0 5px 0 45px;
+    width: 80%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+#app .sort-key {
+    position: relative;
+}
+
+#app .sort-key #sort-icon {
+    font-size: 1.3em;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    opacity: 0.6;
+}
+
+#app #concats-container {
+    transform: translateY(-70px);
+    overflow: auto;
+    height: calc(100vh - 140px);
+}
+
+#app .table-header {
+    overflow: hidden;
+}
+
+#app .concat {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 2fr 2fr 2fr 1fr;
+    background-color: white;
+    border: .1px solid rgb(229, 231, 235);
+    height: 75px;
+
+    animation: fade-in 1s ease 1;
+}
+
+#app .concat > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+#app .concat .profile {
+    align-items: center;
+}
+
+#app .concat .name .fullname {
+    color: rgb(17, 24, 39);
+    font-weight: 500;
+}
+
+#app .concat .mail, #app .concat .numbers .phone {
+    color: rgb(107, 114, 128);
+}
+
+#app .concat .numbers .cellphone {
+    color: rgb(17, 24, 39);
+}
+
+#app .concat .buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#app .concat .labels {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#app .concat .labels * {
+    margin: 4px;
+}
+
+#app .concat .buttons * {
+    cursor: pointer;
+}
+
+#app .concat .marked {
+    background-color: rgb(249, 255, 192);
+}
+ 
+#app .concats-header {
+    width: 100%;
+    height: 40px;
+    background-color: #f9fafb;
+    color: rgb(107, 114, 128);
+    font-size: .75rem;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 80px 2fr 2fr 2fr 1fr;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid lavender;
+}
+
+#app .concats-header :first-child { grid-column-start: 2;}
+#app .concats-header :nth-child(2) { grid-column-start: 3;}
+#app .concats-header :nth-child(3){ grid-column-start: 4;}
+
+#app #concats {
+    width: 97%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#app #concats .concats-container {
+    overflow: auto;
+    height: calc(100vh - 150px);
+}
+
+.Family-label {
+    color: #0e7490;
+    background-color:#ecfeff ;
+}
+
+
+.Job-label {
+    color:#6158e6 ;
+    background-color:#e1e7fd ;
+}
+
+.Friends-label {
+    color: rgb(115 119 43);
+    background-color: #fcffd8;
+}
+
+.BlackList-label {
+    color: #188563;
+    background-color: #def7ec;
+}
+
+.Emergency-label {
+    color: #dc2626;
+    background-color:  #fee2e2;
+   
+   
+}
+
+#app .no-concat-found {
+    color: #4f46e5;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    animation: fade-in .5s ease 1;
+
+}
+
+#app  #add-concat, #app #log-out {
+    cursor: pointer;
+    animation: modal-in 1s ease 1 forward both;
+}   
+
+@keyframes fade-in {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+     100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in {
+    animation: fade .1s ease 1 both;
+}
+
+.fade-out {
+    animation: fade .1s ease reverse 1 both;
+}
+
+.scale-in {
+    animation: modal-in .4s ease 1 both;
+}
+
+.scale-out {
+    animation: modal-in .4s ease 1 both reverse;
+}
+
+
+#concat-editor {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+}
+
+img[src="./css/logo.svg"] {
+    height: 100px;
+}
+
+/* #concat-editor > div > div > div {
+    padding: 100px 380px;
+} */
+@keyframes fade {
+    from {opacity: 0;} to {opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
+    .search-menu {
+        width: 40%;
+    }
+}

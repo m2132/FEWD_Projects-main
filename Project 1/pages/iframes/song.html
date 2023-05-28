@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>song34</title>
+
+    <!-- change the song duration -->
+    <style>:root {--song-duration: 50s;}</style>
+    <link rel="stylesheet" href="../../css/all.css">    
+    <link rel="stylesheet" href="../../css/iframe.css">
+    <script src="https://kit.fontawesome.com/74fb6588e1.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="audio">
+        
+        <audio autoplay>
+            <!-- change the song path -->
+            <source src="../../audio/2.wav" type="audio/mpeg">
+        </audio>
+
+       <a href="no-song-now.html"><i class="fas fa-pause"></i></a>
+        <div class="progress-bar">
+            <div class="current-status"></div>
+        </div>
+        
+        <!-- change the song path -->
+        <a download="download" href="../../audio/2.wav" ><i class="fas fa-download"></i></a>       
+
+    </div>
+</body>
+</html>

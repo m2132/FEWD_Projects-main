@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button{
+  padding:15px;
+  border-radius: 10%;
+  margin:6px;
+}
+
+
+button:not(button:disabled):hover {
+  background-color: #f44336;
+  color: white;
+}
+
+#gamers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gamers-container > div {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 4px 0px #b7b7b7;
+
+}
+
+.add-gamers {
+  padding: 50px 0;
+  background-color: rgb(235, 235, 235);
+  margin-bottom: 20px;
+}
+
+.gamer .number {
+  font-size: xx-large;
+  text-shadow:  -1px 0px 7px rgb(255 0 0);
+}
+
+
+

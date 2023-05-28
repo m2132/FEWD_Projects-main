@@ -1,0 +1,30 @@
+#document {
+    background-color: rgb(175, 175, 175);
+    height: calc(100vh - 193px);
+    display: flex;
+    align-items: center;
+}
+
+#document p {
+    margin: auto;
+    width: 800px;
+    height: calc(100% - 50px);
+    padding: 40px;
+    overflow: auto;
+}
+
+::selection {
+    background-color: rgba(120, 120, 120, 0.4);
+}
+
+#document p:focus {
+    outline: none;
+}
+
+p::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+p::-webkit-scrollbar-button {
+    background-color: red;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="icon" href="../images/icon.svg">
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/log.css">
+    <link rel="stylesheet" href="../css/small-log.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="../css/small-all.css" media="(max-width: 600px)">
+
+    <script src="https://kit.fontawesome.com/74fb6588e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="#">Log in<div id="subline"></div></a>
+            <a href="./sign-up.html">Sign up</a>
+            <a href="./play-list.html">Play list</a>
+            <a href="./home.html#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="./play-list.html">
+                <h2>Log in 
+                    <div class="reset-container tr" title="Reset">
+                        <input type="reset" >
+                        <span class="fas fa-eraser"></span>
+                    </div>
+                </h2>
+            
+                <input type="mail" name="mail" id="mail" placeholder="e-mail" class="input" required pattern="[a-zA-Z0-9]{6, 15}@gmail.com">
+                <input type="password" name="password" id="password" placeholder="password" class="input" required minlength="9" maxlength="15">
+
+                <input type="submit" name="submit" id="submit" value="Go">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

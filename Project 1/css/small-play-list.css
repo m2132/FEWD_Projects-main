@@ -1,0 +1,135 @@
+ .card {
+    width: 350px;
+    height: 80px;
+    border-radius:25px;
+}
+
+.song-bg {
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px 0 0 25px ;
+    z-index: 2;
+}
+.info {
+    margin-left: 100px; 
+    display: inline-flex;
+    width: 230px;
+    justify-content: space-between;
+
+}
+
+.song-name{
+    font-size:18px ;
+    line-height: 1px;
+}
+.rank{
+    align-self: center;
+    position: static;
+}
+
+/* end-of-cards */
+
+
+main {
+    display: block;
+    top: 250px;
+}
+
+iframe {
+    z-index: 2;
+
+}
+
+#cards {
+    justify-content: center;
+
+}
+
+.card {
+    margin: 30px;
+}
+
+label {
+    position: fixed;
+    font-family: var(--main-font);
+    color: var(--blue);
+    top: 100px;
+    left:0px;
+    margin:auto;
+    z-index: 4;
+}
+
+
+[for="pro"] {
+    margin: 60px 0 0 20vw;
+}
+
+[for="free"] {
+    margin: 60px 0px  0 35vw;
+}
+
+[for="quiet"] {
+    margin: 60px 0 0 51vw;
+}
+
+[for="stormy"] {
+    margin: 60px 0 0 66vw;
+} 
+
+[for="all"] {
+display:none;    
+}
+
+[id^="line"] {
+    width: 2px;
+    height: 60vh;
+    background: var(--blue);
+}
+
+#line-1 {
+
+    display:none;
+}
+#line-2 {
+    display: block;
+    background:var(--white-blue);
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 130px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+
+}
+
+#line-2::before, #line-2::after {
+    content: '';
+    background: var(--blue);
+    height: 2px;
+    width: 70vw;
+    position: absolute;
+}
+
+#line-2::before {
+    outline: 20px var(--white-blue) solid;
+    border-right: 20px solid var(--white-blue);
+    border-left: 20px solid var(--white-blue);
+}
+
+#line-2::after {
+    bottom: 0;
+}
+#icon-filter{
+    display:none;
+}
+
+.song-bg {
+    background-size: 200%;
+
+}
+
+.song-bg:hover {
+    background-size: 220%;
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../utilities/FjallaOne-Regular.ttf);   
+}
+
+:root {
+    --pink:         #EBC7E5;
+    --light-blue:   #BBE6F3;
+    --white-blue:   #F3FCFD;
+    --blue:         #042D60;
+    --light-gray:   #f4f4f4;
+    --gray:         #a0a0a0;
+    --header-height: 70px;
+    --main-font:     mainFont;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* transition: all 0.5s; */
+}
+
+*:focus {
+    outline: none;
+}
+
+/*header*/
+header {
+    display: grid;
+    grid-template-columns: 10% 550px auto;
+    grid-template: ". n .";
+    background-color: white;
+    height: var(--header-height);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    z-index: 3;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    height: inherit; 
+    grid-area: 'n';
+}
+
+
+header nav a{
+    font-family: var(--main-font);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+#subline {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    background: linear-gradient(to right, var(--pink), var(--light-blue));
+    top: 77px;
+    transition: all 0.2s;
+}
+
+header nav a:hover #subline {
+    width: 60px;
+}
+
+header nav a:active #subline {
+    width: 60px;
+}
+
+main {
+    position: relative; 
+    top: 100px;
+}
+

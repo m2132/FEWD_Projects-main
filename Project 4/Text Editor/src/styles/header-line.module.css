@@ -1,0 +1,58 @@
+.inputText {
+    background-color: transparent;
+    border: none;
+    color: white;
+    user-select: none;
+    height: 50%;
+    margin-right: 50px;
+    border-bottom: .2px solid white;
+    letter-spacing: 2px;
+}
+
+.inputText:focus-visible {
+    outline: none;
+    background-color: #3b85e2;
+    /* border-bottom: none; */
+
+}
+
+.headerLine  {
+    background: var(--main-color);
+    margin: 0;
+    font-size: 20px;
+    padding: 7px 20px;
+    color: white;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fileInput img, .button img{
+    transition: all .2s;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5px;
+    height: var(--icon-size);
+    width: var(--icon-size);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.fileInput, .button {
+    transition: all .2s;
+}
+
+.fileInput:hover, .button:hover {
+    opacity: .8;
+}
+
+.fileButtons {
+    display: flex;
+    align-items: center;
+}
+

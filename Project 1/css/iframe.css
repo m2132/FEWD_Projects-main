@@ -1,0 +1,55 @@
+body {
+    background-color: var(--white-blue);
+}
+
+.audio {
+    background-color: white;
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--blue);
+}
+
+.audio .progress-bar {
+    width: 70%;
+    background-color: #cdd5df;
+    height: 5px;
+    
+}
+
+.audio .progress-bar .current-status{
+    width: 100%;
+    background-color: var(--blue);
+    height: 5px;
+
+    animation: time var(--song-duration) linear 0s 1 forwards;
+
+}
+
+.audio i {
+    font-size: 30px;
+    color: var(--blue);
+}
+
+.audio i[class*="play"] {
+    animation: scale 2s ease 0s infinite alternate both;
+}
+
+@keyframes scale {
+    from {transform: scale(1);}
+    to   {transform: scale(0.7);}
+}
+
+@keyframes time {
+    from { width: 0%;};
+    to   { width: 100%;}
+}
+
+
+
+
+

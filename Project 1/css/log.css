@@ -1,0 +1,97 @@
+
+
+
+main {
+    background-image: url("../images/log-bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 1000px;
+}
+
+.form-container {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top: 20vh;
+    
+}
+
+.form-container h2 {
+    font-family: var(--main-font);
+    color: var(--blue);
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.form-container form {
+    margin: 70px 50px;
+    display: flex;
+    height: calc(500px - 70px * 2);
+    flex-direction: column;
+
+}
+
+input[type="submit"] {
+    margin-top: auto;
+    border: none;
+    background-color: var(--blue);
+    height: 40px;
+    width: 70%;
+    align-self: center;
+    color: white;
+    font-family: var(--main-font);
+    font-size: 20px;
+    transition:all 0.2s;
+  
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    font-size: 17px;
+    margin: 10px 0;
+    font-family: var(--main-font);
+    margin-top: 15px;
+    color: var(--gray)
+}
+
+.input::placeholder{
+    color: rgba(30, 51, 98, 0.34);
+}
+
+input[type="reset"] {
+    opacity: 0;
+    z-index: 45;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+}
+
+.reset-container {
+    position: relative;
+    bottom: 45px;
+    left: 120px;
+}
+
+.reset-container span {
+    transition: color 0.2s;
+
+}
+.reset-container input:hover ~ span {
+    color: var(--pink);
+}
+#user-status{
+    border-bottom: none;
+
+}
+input[type="submit"]:hover{
+    color: var(--pink);
+}
+
+
+
+
+
+
